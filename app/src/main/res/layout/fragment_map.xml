@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".scenes.MapFragment"
+    android:background="@color/grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="32dp"
+        android:paddingBottom="16dp"
+        android:background="@color/lightBlue">
+
+        <ImageView
+            android:id="@+id/countryFlag"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="15dp"
+            tools:src="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/countryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/countryCapital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/countryPopulation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
