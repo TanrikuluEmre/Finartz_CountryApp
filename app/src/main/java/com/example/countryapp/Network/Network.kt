@@ -1,4 +1,4 @@
-package com.example.countryapp.Network
+package com.example.countryapp.network
 
 import com.example.countryapp.network.APIInterface
 import okhttp3.OkHttpClient
